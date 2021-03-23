@@ -1,0 +1,93 @@
+html, body {
+  font-family: 'Gaegu', cursive;
+  color: #181818;
+}
+
+body, h1, p, div {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  background-color: rgb(215, 247, 255);
+}
+
+.header__title {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgb(107, 148, 87);
+}
+
+.global-width {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.global-width--small {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.scroll-graphics {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  background-color: #FFFFFF;
+}
+
+.graphic-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+   
+  transition: opacity 0.5s;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.graphic-image {
+  /* transform: scale(2); */
+  max-width: 100%;
+  border: 1px solid #181818;
+}
+
+.scroll-texts {
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  margin-bottom: 70vh;
+}
+
+.step-text {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #181818;
+}
